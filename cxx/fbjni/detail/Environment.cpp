@@ -33,7 +33,7 @@ namespace jni {
 
 namespace {
 
-JavaVM* g_vm = nullptr;
+static JavaVM* g_vm = nullptr;
 
 int getEnv(JNIEnv** env) {
   FBJNI_ASSERT(g_vm);
